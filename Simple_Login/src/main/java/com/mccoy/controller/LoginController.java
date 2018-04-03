@@ -54,7 +54,7 @@ public class LoginController {
 	
 	@RequestMapping(value = "create.do", method = RequestMethod.POST)
 	public ModelAndView createController( LoginDto dto) {
-		System.out.println("create Controller is running....");
+		System.out.println("create Controller is running......");
 		System.out.println("login id"+dto.getId());
 		service.createService(dto);
 		System.out.println("login name:"+dto.getName());
